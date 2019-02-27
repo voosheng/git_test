@@ -1,0 +1,142 @@
+/* CSS Document */
+html, body, div, h1, h2, h3, h4, h5, h6,
+ul, ol, dl, li, dt, dd, p, blockquote, pre,
+form, fieldset, table, th, td
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: middle;
+	font-weight: normal;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section
+{
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: Verdana, Geneva, sans-serif ,"微軟正黑體";
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*box-sizing*/
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+/* clearfix */
+.clearfix { *zoom: 1; }
+.clearfix::before,
+.clearfix::after {
+    display: block;
+    line-height: 0;
+    content:'';
+    clear: both;
+
+    visibility:hidden; //允許瀏覽器渲染它，但是不顯示出來
+}
+
+/* float */
+.right{ float:right;}
+.left{ float:left;}
+.clear{ clear:both;}
+
+/* text-align */
+.al-center{text-align: center; margin: 0 auto;}
+.al-left{text-align: left;}
+.al-right{text-align: right;}
+
+/* position */
+.relative{
+    position: relative;
+ }
+
+
+/* 超連結 */
+a { 
+display:block; 
+text-decoration: none;
+cursor: pointer;
+}
+a:hover{ opacity:0.8; }
+.a-inline{display:inline-block; }
+.contact-selected {background-color: #DF8C8C;}
+
+.fixed{   position: fixed;}
+img{
+	max-width:100%;
+	height: auto;
+	vertical-align:middle;
+	border:0;
+}
+ul { list-style: none;}
+
+/*purpose To enable resizing for IE */
+/*branch For IE6-Win, IE7-Win */
+input, button, textarea, select {*font-size: 100%;}
+body {line-height: 180%;}
+ol, ul, li {list-style: none;}
+:link, :visited , ins {text-decoration: none;}
+blockquote:before, blockquote:after,q:before, q:after
+{content: '';content: none;}
+
+:focus {outline: 0;}
+input, button, textarea,select, optgroup, option {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* font size */
+/* 21 */
+.f-h1{ font-size: 1.3125rem; }
+/* 20 */
+.f-h2{ font-size: 1.25rem; }
+/* 19 */
+.f-h3{ font-size: 1.1875rem; }
+/* 18 */
+.f-p4{ font-size: 1.125rem; }
+/* 17 */
+.f-p5{ font-size: 1.0625rem; }
+/* p 16*/
+/* 15 */
+.f-p6{ font-size: 0.9375rem; }
+/* 14 */
+.f-p7{ font-size: 0.875rem; }
+.f-p8{font-size: 0.75rem; }
+
+/* 編輯 限制字數*/
+.ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/* 橫線 */
+.hrset{
+    width:100%;
+    color: #8a94a2;line-height: 20px;
+}
+
+
+

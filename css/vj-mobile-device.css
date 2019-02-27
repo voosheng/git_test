@@ -1,0 +1,59 @@
+/*2019/01/30 by VJ  */
+/*  ------------------------------------------------------- pad*/
+@media screen and (min-width: 480px) {
+
+
+}
+/*  -------------------------------------------------------- pc*/
+@media screen and (min-width: 769px) {
+  html { font-size: 17px; }
+.wrap{	
+	width: 28.6rem;
+	height: 37.5rem;
+	position:absolute;
+	bottom: 1rem;
+	right: 1rem;
+}
+.body{
+	height: 25rem;
+}
+.height-fixed{
+	height: 28rem;
+	overflow-y: scroll;
+}
+.height-fixed-all{
+	height: 30rem;
+	overflow-y: scroll;
+}
+.height-fixed-dialog{
+	height: 23rem;		
+	overflow-y: scroll;	
+}
+.footer{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.body-search-bar{
+	width: 28.5rem;	
+	overflow: hidden;
+}
+.ui-alert{
+	width: 270px;
+	height: 200px;
+}
+.ic-circle{
+	width: 3rem;
+	height: 3rem;
+	font-size: 1.5rem;
+	line-height: 3rem;
+
+}
+.height-fixed-edit{
+	height: 30rem;		
+
+
+}
+
+}

@@ -1,0 +1,484 @@
+/* @import url("flex.css"); */
+/*2019/01/30 by VJ  */
+
+html { font-size: 16px; }
+body{	
+	line-height: 135%;
+	background-image: url('.images/web-bg.jpg');
+	background: url("web-bg.jpg") no-repeat center center;
+}
+.status{ 
+	color:#8A91A1 ;
+	background-color:#E3E5EB ;
+}
+.header{ 
+
+	border-bottom: 3px solid #E82F3B;
+}
+.title-bar{
+	background-color: #3B4C5C;
+	height: 3.125rem;
+	line-height: 3.125rem;
+}
+.body{
+	height: 30rem;
+}
+.height-fixed{
+	height: 30rem;
+	overflow-y: scroll;
+}
+.height-fixed-all{
+	height: 35rem;
+	overflow-y: scroll;
+}
+.height-fixed-dialog{
+	height: 27rem;
+	overflow-y: scroll;
+}
+.height-fixed-dialog-group{
+	height: 28.8rem;
+	overflow-y: scroll;
+}
+.height-fixed-edit{
+	height: 30rem;
+	overflow-y: scroll;
+}
+.overflow-y{
+	height: 25rem;
+	overflow-y: scroll;
+}
+.footer{
+	border-bottom: 4px solid #3B4C5C;
+}
+.footer-fixed{
+	height: 5rem;
+	padding: .5rem 0;
+	background-color: #E5E4E8;
+}
+.inner{
+	margin-left: 0.9375rem;
+	margin-right: 0.9375rem;
+}
+.wrap{
+	border: 1px solid #DBDBDB;
+	border-radius: .7rem;
+	box-shadow: 1px 2px 8px 2px #DBDBDB;
+	margin-top: 5rem;
+	position: relative;
+}
+/* 顏色 */
+.cl-main{ color: #E82F3B;}
+.cl-main-bg{ background-color: #E82F3B;}
+.cl-main-bg-light{ background-color: #D85F65;}
+.cl-write{ color: #fff; }
+.cl-gray{color:#8A91A1;}
+
+.f-mark{
+	color: #8A91A1;
+}
+.f-mark:before{
+	content: "<";
+	display: inline-block;
+	color: #8A91A1;
+}
+.f-mark:after{
+	content: ">";
+	display: inline-block;
+}
+
+/* 基本 input */
+input[type="text"],
+input[type="search"]
+{
+    width:100%;
+    font-size: 1.125rem;
+    line-height: 2.3rem;
+    border-radius: 3px;
+    border: 1px solid #DBDBDB;
+    color: #DF8C8C;
+    padding-left: 0.5rem;
+}
+input[type="text"]:focus
+  {
+     outline: none;
+     background-color: ;
+     border: 1px solid #DF8C8C;
+}
+input[type="checkbox"]{
+	width: 1.4rem;
+	height: 1.4rem;	
+}
+input[type="checkbox"]:checked{
+	background-color: red;
+}
+
+
+/* 單個聯絡人 */
+a.list-single{
+	border-bottom: 1px solid #E3E5EB;
+	height: 4rem;
+}
+a.list-single:hover{
+	background-color: #F4F5F9 ;
+	opacity:1;
+}
+a.list-single:active{
+	background-color: #E0E0E6 ;
+	/* opacity:0.7; */
+}
+
+/* 單個聯絡人 有右邊選項 */
+.list-single_right{
+
+}
+.list-single-right{
+	padding-top: .5rem;
+
+}
+/* 聯絡人清單抬頭霸 */
+.list-title-bar{
+	color: #8A91A1 ;
+	line-height: 1.5rem;
+	background-color:#EEEEEE ;
+}
+/* 核取方塊清單抬頭霸 */
+.option-title-bar{
+	color: #8A91A1 ;
+	height: 2.8rem;
+	line-height: 2.8rem;
+	background-color:#EEEEEE ;
+}
+.option-title-bar > div > input[type="checkbox"]{
+	margin: .7rem 0 0 0;
+} 
+/* .option-title-bar > div > input[type="checkbox"]:checked ~ .body{
+background-color: red;
+} */
+.option-single{
+	margin: 1.2rem 0;
+	/* border-bottom: 1px solid #E3E5EB;  */
+}
+
+/* 大頭貼 */
+.sticker{
+	background-color: #ccc;
+	border-radius: 50%;
+	width: 3rem;
+	height: 3rem;
+	font-size: 1.9rem;
+	line-height: 3rem;
+	text-align: center;
+	margin-top: 0.5rem;
+	color: #3B4C5C;
+	vertical-align: middle;	
+}
+.sticker-news{
+	background-color: #DF8C8C;
+	color: #fff;
+}
+.sticker-dialog{
+	width: 2rem;
+	height: 2rem;
+	/* font-size: 1.5rem; */
+	line-height: 1.5rem;
+	vertical-align: baseline;
+}
+.sticker-img img{
+	width: 3rem;
+	height: auto;
+}
+.sticker-img,
+.sticker-img + h2,
+.sticker + h2{
+	line-height: 4rem;
+}
+.sticker-img + h2,
+.sticker + h2{
+	margin-left: 0.7rem;
+	color: #3B4C5C;
+}
+
+/* 按鈕 */
+.btn-confirm{background-color:#E82F3B; }
+.btn-negative{background-color: #576470; }
+.b-btn{
+	text-align: center;
+	color: #fff; 
+	padding: .7rem; 
+	border-radius: .3rem;
+	margin: .8rem 0 0;
+}
+.b-btn-xs{	padding: .3rem .5rem; }
+
+/* 對話雲 */
+.dia-cloud-gp{
+	width: 60%;
+	margin: 1rem 0;
+	line-height: 1.5rem;
+}
+.dia-cloud{
+	background-color:#E3E5EB ;
+	border-radius: 20px;
+	padding: 5px 10px;
+
+}
+.dia-cloud-self{
+	color: #fff;
+	background-color:#D85F65 ;
+
+}
+.dia-cloud-time,.time{
+	font-size: .7rem;
+	color: #C0C3CB;
+}
+.dia-cloud-notice{
+	margin: 1rem 0;
+	line-height: 1.5rem;
+	color:#D85F65;
+}
+
+/* 輸入區域 */
+.textarea{
+	box-shadow: 0 -2px 5px 1px #DBDBDB; 
+}
+.textarea {
+	width: 100%;
+	padding: .8rem;
+	resize: none;
+	border: none;
+}
+/* 輸入按鈕 */
+.textarea-btn{ background-color: #E3E5EB;}
+.textarea-btn a{
+	width: 1.7rem;
+	height: auto;
+	padding: .5rem 0;
+	
+}
+
+.list-single_right {
+	line-height: 4rem;
+}
+.list-checkbox {
+	line-height: 4rem;
+	vertical-align: middle;	
+	/* margin: 5px 0 0 0; */
+}
+
+
+/* 左箭頭 */
+a.left-arrow{
+	padding: 5px;  
+    line-height: 2.5rem;
+}
+a.left-arrow > img{
+width: 1.125rem;
+height: auto;   
+}
+/* 右箭頭 */
+a.next-arrow{
+	line-height: 4rem;
+	text-align: right;
+}
+.next-arrow2{
+	width: 1rem;
+	height: auto;
+	/* padding: 5px; */
+	border: s1;
+	/* line-height: 4rem;	 */
+}
+a.next-arrow img{
+	width: 0.9375rem;
+	height: auto;
+}
+/* 有搜尋的抬頭霸 */
+.title-bar-search{
+
+}
+/* header的搜尋霸 */
+.search-bar{
+	width:80%;
+	margin-left: 1rem;
+	line-height: 2.875rem;	
+}
+.search-bar input[type="search"]{
+    font-size: 1.0625rem;
+    border: none;
+    color: #DF8C8C;
+    padding-left: 0.5rem;
+    vertical-align: middle;
+    line-height: 2rem;
+
+}
+.body-search-bar {
+	 width: 100%;
+	 overflow: hidden;
+}
+.body-search-bar input[type="search"]{
+	padding-left: 2rem;
+    line-height: 1.8rem;
+    background-image: url(../images/ic-search.png) ;
+    background-position: .5rem .4rem; 
+    background-repeat: no-repeat;
+    background-size: 1.1rem auto;
+}
+.btn-group{
+	padding: .5rem 0;
+}
+/* 隱身燈號 */
+.it-light{
+	width: 1.2rem;
+	height: 1.2rem;
+	color: #fff;
+	background-color: #aaa;
+	border-radius: 50%;
+	margin-left: .5rem;
+	padding: .3rem 0;
+	display: inline-block;
+	line-height: .45rem;
+	text-align: center;
+}
+.it-light-status{
+	width: .7rem;
+	height: .7rem;
+	/* green */
+	background-image: radial-gradient(circle,#00CC98,#008C68,#004C39 );
+	/* red */
+	/* background-image: radial-gradient(circle,#FF5546,#DB2B30,#5A142A ); */
+	/* yellow */
+	/* background-image: radial-gradient(circle,#F29F05,#F28B30,#BF591F ); */
+}
+/* .it-light{
+	width: 1.5rem;
+	height: 1.5rem;
+	color: #aaa;
+	border: 1px solid #aaa;
+	border-radius: 50%;
+	margin-left: .5rem;
+	padding: .3rem 0;
+	display: inline-block;
+	line-height: .8rem;
+	text-align: center;
+} */
+
+.bedge{
+	/* width: 50% ; */
+	text-align:center;
+	font-size: .8rem;
+	color:#D85F65 ;
+	background-color: #FFEB85;
+	border-radius: 20px;
+	padding: 0 5px;
+}
+
+.btn-add{
+	position: absolute;
+	right: 3rem;
+	bottom: 3rem;
+}
+a.btn-add:hover{
+	opacity: 1;
+}
+.set{
+	color:#3B4C5C ;
+	text-align:center;
+	font-size: .9rem;
+	background-color: #E5E4E8;
+	border-radius: 20px;
+	padding: 0.3125rem 0.4375rem ;
+
+}
+.set-img{
+	width: .3rem;
+	height: auto;
+}
+input[type="text"].input-dialog  {
+	width: 85%;
+	line-height: 2rem;
+	margin-left: 1rem;
+	border: none;
+	/* background:rgba(255,255,255,0.3); */
+}
+
+input:checked ~ a.list-single{
+	background-color: #E5E4E8;	
+}
+
+.btn-close-position{
+	position: relative;	
+}
+.btn-close{
+	position: absolute;
+	top: .2rem;
+	right: .2rem;
+	z-index:  50;
+	width: 3.5rem;
+	height: auto;
+}
+
+.btn-join img{
+	width: 1.5rem;
+	height: auto;
+	margin-bottom: 0.2rem;
+}
+
+/* ui-alert 警告視窗 */
+.ui-alert-bg{
+	position: absolute;	
+	height: 100%;
+	width: 100%;
+	left: 0;
+  	top: 0;
+	background-color: rgba(0,0,0,0.4) ;
+	z-index: 100;
+	border-radius: .7rem;
+}
+.ui-alert-wrap{}
+.ui-alert{
+	/* z-index: 100; */
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;	
+	left: 0;
+	bottom: 0;
+	width: 65vmin;
+	height: 40vmin;
+	border-radius: .3rem;
+	background-color: #fff;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	z-index: 100;
+}
+.ui-alert_footer{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	color: #fff;
+}
+.ic-circle{
+	color: #fff;
+	width: 2.5rem;
+	height: 2.5rem;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+	background: #DF8C8C;
+	border-radius: 50%;
+	margin: 1.2rem auto 1rem;
+}
+.ui-tip{
+	color: #D85F65;
+	width: 90%;
+	position: absolute;
+	/* top: 0; */
+	bottom:10rem;
+	left: 0;
+	right: 0;
+	margin: auto;
+	line-height: 1.5;
+}
+.set-confirm{
+	background-color: #D85F65;
+	color: #fff;
+}

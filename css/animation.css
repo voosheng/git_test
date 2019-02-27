@@ -1,0 +1,32 @@
+/* animation */
+/* 警告視窗 */
+.ui-alert{
+  animation-name: fadeInOut ;
+  animation-duration: .8s  ;
+}
+@keyframes fadeInOut {
+  0%{
+    top: -13rem; 
+    opacity: 0;   
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+/* 提示視窗 */
+.ui-tip{
+  opacity: 0;
+  animation: fadeIn-Out 3s 1s; 
+}
+
+@keyframes fadeIn-Out{
+0%{}
+25%{
+    opacity: 1;    
+}
+100%{
+    opacity: 0;
+}
+}
+
